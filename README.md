@@ -9,11 +9,29 @@ with **Python, Kubernetes, AWS, and DevOps automation**
 
 # 🧠 Tech Stack
 
-| AI | Cloud | DevOps |
-|---|---|---|
-| Python | AWS | Docker |
-| LangChain | Azure | Kubernetes |
-| RAG | OpenStack | CI/CD |
+### 🤖 AI / LLM
+
+![Python](https://img.shields.io/badge/Python-AI-blue?logo=python)
+![LangChain](https://img.shields.io/badge/LangChain-LLM-green)
+![RAG](https://img.shields.io/badge/RAG-VectorDB-purple)
+![OpenAI](https://img.shields.io/badge/OpenAI-API-black?logo=openai)
+
+---
+
+### ☁️ Cloud
+
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws)
+![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure)
+![OpenStack](https://img.shields.io/badge/OpenStack-PrivateCloud-red?logo=openstack)
+
+---
+
+### ⚙️ DevOps
+
+![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-blue?logo=kubernetes)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Automation-green)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI-blue?logo=githubactions)
 
 ---
 
@@ -44,18 +62,9 @@ https://hub.docker.com/u/edumgt
 
 ---
 
-
----
-
 # 📊 GitHub Stats
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=edumgt&show_icons=true)
-
-![Python](https://img.shields.io/badge/python-blue)
-
-![Kubernetes](https://img.shields.io/badge/kubernetes-blue)
-
-![AWS](https://img.shields.io/badge/aws-orange)
 
 ---
 
@@ -65,7 +74,7 @@ https://hub.docker.com/u/edumgt
 - LLMOps Platform  
 - Kubernetes DevOps  
 - Cloud Infrastructure  
-- AI Automation
+- AI Automation  
 
 ---
 
