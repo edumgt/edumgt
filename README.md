@@ -1,9 +1,8 @@
 # 👋 Hi, I'm Kim Do Young
 
-🚀 **AI / LLMOps / DevOps Engineer**
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&duration=3000&color=36BCF7&lines=AI+%2F+LLMOps+Engineer;DevOps+%2F+Cloud+Engineer;Building+AI+Agents+and+RAG+Systems)](https://git.io/typing-svg)
 
-Building **AI Agents, RAG systems, and cloud-native platforms**  
-with **Python, Kubernetes, AWS, and DevOps automation**
+🚀 Building **AI Agents, RAG systems, and cloud-native platforms**
 
 ---
 
@@ -41,27 +40,11 @@ with **Python, Kubernetes, AWS, and DevOps automation**
 
 | Project | Description |
 |---|---|
-| Docker-Class-Master | Docker, Harbor, On-Prem DevOps lab |
+| Docker-Class-Master | Docker DevOps lab |
 | Kubernetes-Class-Master | Kubernetes learning environment |
 | Python-AI-Agent-Class | Python 기반 AI Agent 개발 |
-| AI-Faster-whisper_RAG_Vector | Whisper + RAG 시스템 |
-| AI-Langchain-learning-lab | LangChain 실습 |
-
----
-
-# 🤖 AI / LLMOps Focus
-
-- AI Agent Architecture  
-- Retrieval-Augmented Generation (RAG)  
-- LLMOps Platform Engineering  
-- Vector Database Systems  
-- AI Automation Pipelines  
-
----
-
-# 🐳 Docker Hub
-
-https://hub.docker.com/u/edumgt
+| AI-Faster-whisper_RAG_Vector | Whisper + RAG system |
+| AI-Langchain-learning-lab | LangChain playground |
 
 ---
 
@@ -73,7 +56,7 @@ https://hub.docker.com/u/edumgt
 
 ---
 
-# 📈 GitHub Activity Graph
+# 📈 Activity Graph
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=edumgt)
 
@@ -82,16 +65,6 @@ https://hub.docker.com/u/edumgt
 # 👀 Profile Visitors
 
 ![Visitors](https://komarev.com/ghpvc/?username=edumgt&color=blue)
-
----
-
-# 🌐 Interests
-
-- AI Agents
-- LLMOps
-- Kubernetes DevOps
-- Cloud Infrastructure
-- AI Automation
 
 ---
 
