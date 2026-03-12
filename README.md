@@ -1,16 +1,66 @@
-## Hi there 👋
+# 👋 Hi, I'm Kim Do Young
 
-<!--
-**edumgt/edumgt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🚀 AI / LLMOps / DevOps Engineer  
 
-Here are some ideas to get you started:
+Building **AI Agents, RAG systems, and cloud-native platforms**  
+with **Python, Kubernetes, AWS, and DevOps automation**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+# 🧠 Tech Stack
+
+| AI | Cloud | DevOps |
+|---|---|---|
+| Python | AWS | Docker |
+| LangChain | Azure | Kubernetes |
+| RAG | OpenStack | CI/CD |
+
+---
+
+# 🔥 Featured Projects
+
+| Project | Description |
+|---|---|
+| Docker-Class-Master | Docker, Harbor, On-Prem DevOps lab |
+| Kubernetes-Class-Master | Kubernetes learning environment |
+| Python-AI-Agent-Class | Python 기반 AI Agent 개발 |
+| AI-Faster-whisper_RAG_Vector | 음성 분석 + RAG 시스템 |
+| AI-Langchain-learning-lab | LangChain 기능 실습 |
+
+---
+
+# 🤖 AI / LLMOps Projects
+
+- AI Agent Platform  
+- RAG Vector Database System  
+- LLMOps on AWS / Azure  
+- AI Automation Pipeline  
+
+---
+
+# 🐳 Docker Hub
+
+https://hub.docker.com/u/edumgt
+
+---
+
+
+---
+
+# 📊 GitHub Stats
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=edumgt&show_icons=true)
+
+---
+
+# 🌐 Interests
+
+- AI Agent Architecture  
+- LLMOps Platform  
+- Kubernetes DevOps  
+- Cloud Infrastructure  
+- AI Automation
+
+---
+
+⭐ If you like the projects, please give a star!
