@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Kim Do Young
 
-🚀 AI / LLMOps / DevOps Engineer  
+🚀 **AI / LLMOps / DevOps Engineer**
 
 Building **AI Agents, RAG systems, and cloud-native platforms**  
 with **Python, Kubernetes, AWS, and DevOps automation**
@@ -15,6 +15,7 @@ with **Python, Kubernetes, AWS, and DevOps automation**
 ![LangChain](https://img.shields.io/badge/LangChain-LLM-green)
 ![RAG](https://img.shields.io/badge/RAG-VectorDB-purple)
 ![OpenAI](https://img.shields.io/badge/OpenAI-API-black?logo=openai)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)
 
 ---
 
@@ -30,7 +31,8 @@ with **Python, Kubernetes, AWS, and DevOps automation**
 
 ![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-blue?logo=kubernetes)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-Automation-green)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
+![Ansible](https://img.shields.io/badge/Ansible-Automation-red?logo=ansible)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI-blue?logo=githubactions)
 
 ---
@@ -42,17 +44,18 @@ with **Python, Kubernetes, AWS, and DevOps automation**
 | Docker-Class-Master | Docker, Harbor, On-Prem DevOps lab |
 | Kubernetes-Class-Master | Kubernetes learning environment |
 | Python-AI-Agent-Class | Python 기반 AI Agent 개발 |
-| AI-Faster-whisper_RAG_Vector | 음성 분석 + RAG 시스템 |
-| AI-Langchain-learning-lab | LangChain 기능 실습 |
+| AI-Faster-whisper_RAG_Vector | Whisper + RAG 시스템 |
+| AI-Langchain-learning-lab | LangChain 실습 |
 
 ---
 
-# 🤖 AI / LLMOps Projects
+# 🤖 AI / LLMOps Focus
 
-- AI Agent Platform  
-- RAG Vector Database System  
-- LLMOps on AWS / Azure  
-- AI Automation Pipeline  
+- AI Agent Architecture  
+- Retrieval-Augmented Generation (RAG)  
+- LLMOps Platform Engineering  
+- Vector Database Systems  
+- AI Automation Pipelines  
 
 ---
 
@@ -64,17 +67,31 @@ https://hub.docker.com/u/edumgt
 
 # 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=edumgt&show_icons=true)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=edumgt&show_icons=true&theme=default)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=edumgt&layout=compact)
+
+---
+
+# 📈 GitHub Activity Graph
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=edumgt)
+
+---
+
+# 👀 Profile Visitors
+
+![Visitors](https://komarev.com/ghpvc/?username=edumgt&color=blue)
 
 ---
 
 # 🌐 Interests
 
-- AI Agent Architecture  
-- LLMOps Platform  
-- Kubernetes DevOps  
-- Cloud Infrastructure  
-- AI Automation  
+- AI Agents
+- LLMOps
+- Kubernetes DevOps
+- Cloud Infrastructure
+- AI Automation
 
 ---
 
