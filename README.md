@@ -50,9 +50,13 @@ https://hub.docker.com/u/edumgt
 # 📊 GitHub Stats
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=edumgt&show_icons=true)
+
 ![Python](https://img.shields.io/badge/python-blue)
+
 ![Kubernetes](https://img.shields.io/badge/kubernetes-blue)
+
 ![AWS](https://img.shields.io/badge/aws-orange)
+
 ---
 
 # 🌐 Interests
