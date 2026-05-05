@@ -51,7 +51,7 @@ Java(Spring Boot), Node.js(Express), Python(Django/Flask), React/Vue 등 다양�
 
 | 기간 | 고객/기관 | 프로젝트/업무 | 키워드/기술(요약) |
 |---|---|---|---|
-| 2026 | OO감독원 | AA | DX, LLM Ops AX 인프라, jupyter lab, 폐쇄망(air-gap), Kubernetes |
+| 2026 | 금융감독원 | AA | DX, LLM Ops AX 인프라, jupyter lab, 폐쇄망(air-gap), Kubernetes |
 | 2025 | 포스코 A&C | BI(AWS Glue/Redshift/QuickSight) 구축 PM | 데이터 파이프라인/BI |
 | 2025 | Opensanctions | 국제 제재 리스트 크롤링·API | Python, 크롤링, API |
 | 2025 | 디지탈 대성(Paffy) | B2B 모듈 개발(AA/공통) | AWS, API GW, Lambda |
