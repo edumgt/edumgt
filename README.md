@@ -9,16 +9,33 @@
 
 ---
 
-## 💼 What We Do
+## 🛠 기술 역량 (AI & Data Engineering 중심)
 
-- 맞춤형 **AI Agent 개발**
-  - 고객사 업무 프로세스 기반 에이전트 설계 및 구축
-- **RAG 기반 지식검색 시스템 구축**
-  - 사내 문서/DB 연동, 정확한 답변 생성
-- **LLMOps & MLOps 파이프라인 제공**
-  - 배포, 모니터링, 성능 최적화 자동화
-- **클라우드 네이티브 AI 플랫폼 구축**
-  - AWS / Azure 기반 확장형 인프라 설계
+### 1. AI 모델 & LLM 엔지니어링 (핵심 엔진)
+*   **대형 언어 모델 (LLM):** OpenAI (ChatGPT), Anthropic (Claude) 연동 및 애플리케이션 아키텍처 설계
+*   **소형 모델 & 파인튜닝:** PEFT / LoRA 기법 기반 경량 파인튜닝 (Hugging Face Transformers 활용), vLLM 기반 고속 추론 서버 최적화 및 양자화 모델 배포
+*   **머신러닝 & 컴퓨터 비전:** Scikit-learn 기반 예측 모델 및 성능 평가, 실무 OCR/STT 모델 연동 기반 자동 재학습(CT) 파이프라인 구축
+
+### 2. AI 오케스트레이션 & 에이전트 시스템
+*   **에이전트 프레임워크:** LangChain, LangGraph, Flowise를 활용한 상태 기반 멀티 에이전트 오케스트레이션, ReAct/CoT 기반 논리적 추론 및 자가 성찰(Self-reflection) 워크플로우 설계
+*   **프롬프트 엔지니어링 & 보안:** Structured Output 제어, MCP 활용, NeMo Guardrails 기반 AI 답변 안전성 확보 및 프롬프트 인젝션 방어 아키텍처
+*   **자동화 워크플로우:** n8n, AIPP 등 노코드/로코드 도구 연계 기업형 지능형 업무 자동화 설계
+
+### 3. 지식 그래프 & 검색 기술 (Advanced RAG)
+*   **GraphRAG:** Neo4j 기반 그래프 데이터베이스 설계, Cypher 쿼리 및 Neo4j GDS(PageRank, Louvain 등) 알고리즘 기반 데이터 상관관계 분석 및 하이브리드 검색 엔진 구현
+*   **벡터 데이터베이스:** Pinecone, Weaviate, pgvector (PostgreSQL) 기반 고성능 유사도 검색 및 Semantic Chunking 최적화
+*   **검색 개선 & 평가:** Multi-hop 추론 검색, LlamaIndex 기반 고효율 인덱싱, RAGAS 프레임워크를 통한 답변 충실도 정량 평가 체계 구축
+
+### 4. 데이터 엔지니어링 & 대규모 파이프라인
+*   **분산 처리 & 스트리밍:** Apache Spark (PySpark) 기반 대규모 로그 정제, Apache Kafka (Kafka Streams) 기반 실시간 메시징 및 이벤트 중심 아키텍처(EDA) 구축
+*   **데이터 레이크하우스:** Delta Lake 스토리지 포맷 구축, AWS S3 데이터 레이크 설계, CDC 기술을 활용한 RDB-NoSQL 실시간 동기화
+*   **데이터 관리 & 검증:** Great Expectations 기반 데이터 품질 검증 자동화, BeautifulSoup/Selenium 기반 크롤링 파이프라인 및 Redis 세션 캐싱 최적화
+
+### 5. MLOps, DevOps & 인프라 아키텍처
+*   **파이프라인 자동화:** Apache Airflow(DAG 설계, 태스크 의존성 관리) 기반 모델 학습 및 재학습(CT) 자동화
+*   **모델 및 버전 관리:** MLflow 기반 Model Registry 관리 체계 구축
+*   **컨테이너 오케스트레이션:** Docker, Kubernetes (AWS EKS), Helm 차트 기반 대규모 데이터 인프라 패키징 및 관리
+*   **인프라 자동화 (IaC):** Terraform 기반 클라우드 인프라 자원 관리 및 자율형 가드레일 설계
 
 ---
 
