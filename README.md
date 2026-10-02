@@ -65,18 +65,3 @@
 
 ---
 
-## 🔥 Key Solution Areas
-
-- AI 고객지원/상담 Agent
-- 사내 업무자동화 Agent (문서/보고/분석)
-- 음성·문서 기반 검색형 AI Assistant
-- 엔터프라이즈 전용 LLM 서비스 아키텍처
-
----
-
-## 📩 Contact
-
-귀사의 비즈니스에 최적화된  
-**실전형 AI Agent 솔루션**을 지금 시작하세요.
-
-⭐ AI Agent 구축 문의 환영합니다.
