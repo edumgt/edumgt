@@ -1,67 +1,56 @@
-# 🚀 AI Agent Solution Company
+# 🚀 AI Agent · Fintech Solution
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&duration=3000&color=36BCF7&lines=Enterprise+AI+Agent+Development;RAG+and+LLMOps+Solutions;Cloud-Native+AI+Platforms)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&duration=3000&color=36BCF7&lines=Financial+AI+Agents;RAG+and+Quant+Backtesting;Cloud-Native+Trading+Platforms)](https://git.io/typing-svg)
 
-### **We Build Intelligent AI Agents for Real Business**
-
-기업의 업무를 자동화하고 생산성을 극대화하는  
-**AI Agent · RAG · LLMOps 전문 솔루션**을 제공합니다.
+### **금융 도메인 AI Agent · RAG · 퀀트 · 모의투자 플랫폼을 만듭니다**
 
 ---
 
-## 🛠 기술 역량 (AI & Data Engineering 중심)
+## 📦 Featured Projects (최근 업데이트: 2026-10-07)
 
-### 1. AI 모델 & LLM 엔지니어링 (핵심 엔진)
-*   **대형 언어 모델 (LLM):** OpenAI (ChatGPT), Anthropic (Claude) 연동 및 애플리케이션 아키텍처 설계
-*   **소형 모델 & 파인튜닝:** PEFT / LoRA 기법 기반 경량 파인튜닝 (Hugging Face Transformers 활용), vLLM 기반 고속 추론 서버 최적화 및 양자화 모델 배포
-*   **머신러닝 & 컴퓨터 비전:** Scikit-learn 기반 예측 모델 및 성능 평가, 실무 OCR/STT 모델 연동 기반 자동 재학습(CT) 파이프라인 구축
-
-### 2. AI 오케스트레이션 & 에이전트 시스템
-*   **에이전트 프레임워크:** LangChain, LangGraph, Flowise를 활용한 상태 기반 멀티 에이전트 오케스트레이션, ReAct/CoT 기반 논리적 추론 및 자가 성찰(Self-reflection) 워크플로우 설계
-*   **프롬프트 엔지니어링 & 보안:** Structured Output 제어, MCP 활용, NeMo Guardrails 기반 AI 답변 안전성 확보 및 프롬프트 인젝션 방어 아키텍처
-*   **자동화 워크플로우:** n8n, AIPP 등 노코드/로코드 도구 연계 기업형 지능형 업무 자동화 설계
-
-### 3. 지식 그래프 & 검색 기술 (Advanced RAG)
-*   **GraphRAG:** Neo4j 기반 그래프 데이터베이스 설계, Cypher 쿼리 및 Neo4j GDS(PageRank, Louvain 등) 알고리즘 기반 데이터 상관관계 분석 및 하이브리드 검색 엔진 구현
-*   **벡터 데이터베이스:** Pinecone, Weaviate, pgvector (PostgreSQL) 기반 고성능 유사도 검색 및 Semantic Chunking 최적화
-*   **검색 개선 & 평가:** Multi-hop 추론 검색, LlamaIndex 기반 고효율 인덱싱, RAGAS 프레임워크를 통한 답변 충실도 정량 평가 체계 구축
-
-### 4. 데이터 엔지니어링 & 대규모 파이프라인
-*   **분산 처리 & 스트리밍:** Apache Spark (PySpark) 기반 대규모 로그 정제, Apache Kafka (Kafka Streams) 기반 실시간 메시징 및 이벤트 중심 아키텍처(EDA) 구축
-*   **데이터 레이크하우스:** Delta Lake 스토리지 포맷 구축, AWS S3 데이터 레이크 설계, CDC 기술을 활용한 RDB-NoSQL 실시간 동기화
-*   **데이터 관리 & 검증:** Great Expectations 기반 데이터 품질 검증 자동화, BeautifulSoup/Selenium 기반 크롤링 파이프라인 및 Redis 세션 캐싱 최적화
-
-### 5. MLOps, DevOps & 인프라 아키텍처
-*   **파이프라인 자동화:** Apache Airflow(DAG 설계, 태스크 의존성 관리) 기반 모델 학습 및 재학습(CT) 자동화
-*   **모델 및 버전 관리:** MLflow 기반 Model Registry 관리 체계 구축
-*   **컨테이너 오케스트레이션:** Docker, Kubernetes (AWS EKS), Helm 차트 기반 대규모 데이터 인프라 패키징 및 관리
-*   **인프라 자동화 (IaC):** Terraform 기반 클라우드 인프라 자원 관리 및 자율형 가드레일 설계
+| Repository | 설명 | 주요 기술 |
+|---|---|---|
+| [**stock-kms-portal**](https://github.com/edumgt/stock-kms-portal) | 한국어 금융 학습·투자 분석 포털 — 시장 차트, 포트폴리오 시뮬레이션, LEAN 백테스트, 금융 문서 기반 RAG | `AWS` `Python` `RAG` `LEAN` |
+| [**stock-coin-trade**](https://github.com/edumgt/stock-coin-trade) | 코인·주식 통합 모의투자 웹 애플리케이션 | `Spring Boot` `Java` `Vanilla JS` `Docker Compose` `K8s/EKS` `Nginx` |
+| [**lumina-invest**](https://github.com/edumgt/lumina-invest) | FastAPI 기반 금융 AI 에이전트 — ReAct 챗봇(개인·기업 CB 자연어 질의), 퀀트 자동매매(LightGBM/MLP 백테스트), Qdrant RAG 문서 검색 | `FastAPI` `Ollama` `Qdrant` `LightGBM` `Docker` |
+| [**domain-rag-lab**](https://github.com/edumgt/domain-rag-lab) | 금융·생활거래 학습 RAG와 QuantConnect LEAN 백테스트 워크플로우 | `FastAPI` `Qdrant` `pgvector` `Streamlit` `yfinance` `Docker` |
 
 ---
 
-## 🧠 Core Expertise
+## 🛠 기술 역량
 
-### 🤖 AI / LLM
+### 1. AI / LLM & Agent
+*   **ReAct 에이전트 챗봇**, Tool Calling, Ollama 기반 로컬 LLM 연동 (lumina-invest, domain-rag-lab)
+*   **LangChain 등 오케스트레이션**과 프롬프트 설계를 통한 금융 도메인 질의응답
 
-![Python](https://img.shields.io/badge/Python-AI-blue?logo=python)
-![LangChain](https://img.shields.io/badge/LangChain-LLM-green)
-![RAG](https://img.shields.io/badge/RAG-VectorDB-purple)
-![OpenAI](https://img.shields.io/badge/OpenAI-API-black?logo=openai)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)
+### 2. RAG & 검색
+*   **벡터 DB:** Qdrant, pgvector (PostgreSQL) 기반 금융 문서 유사도 검색
+*   금융 문서 기반 RAG 학습 포털 구축 (stock-kms-portal, domain-rag-lab)
 
-### ☁️ Cloud
+### 3. 퀀트 & 백테스트
+*   **QuantConnect LEAN** 백테스트 워크플로우, yfinance 시장 데이터 수집
+*   **LightGBM / MLP** 기반 퀀트 자동매매 모델 및 백테스트
+*   시장 차트, 포트폴리오 시뮬레이션
 
-![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws)
-![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure)
-![OpenStack](https://img.shields.io/badge/OpenStack-PrivateCloud-red?logo=openstack)
+### 4. 풀스택 & 트레이딩 플랫폼
+*   **Backend:** Python FastAPI, Java Spring Boot
+*   **Frontend:** Vanilla JS, HTML, Streamlit
+*   코인·주식 통합 모의투자 서비스 (stock-coin-trade)
 
-### ⚙️ DevOps
-
-![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-blue?logo=kubernetes)
-![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
-![Ansible](https://img.shields.io/badge/Ansible-Automation-red?logo=ansible)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI-blue?logo=githubactions)
+### 5. Cloud & DevOps
+*   **Container/Orchestration:** Docker, Docker Compose, Kubernetes (AWS EKS)
+*   **Cloud:** AWS, Nginx 기반 배포 구성
 
 ---
 
+## 🧠 Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Java](https://img.shields.io/badge/Java-Spring%20Boot-6DB33F?logo=springboot&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-VectorDB-DC244C)
+![PostgreSQL](https://img.shields.io/badge/pgvector-PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-LLM-black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white)
