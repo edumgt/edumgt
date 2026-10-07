@@ -38,12 +38,6 @@ FastAPI 기반 금융 AI 에이전트. `FastAPI` `Ollama` `Qdrant` `LightGBM` `D
 *   **yfinance 데이터 + LEAN 백테스트**: 시세 수집부터 전략 백테스트까지 워크플로우 구성
 *   **Docker 환경**: 재현 가능한 실습 환경
 
----|---|---|
-| [**stock-kms-portal**](https://github.com/edumgt/stock-kms-portal) | 한국어 금융 학습·투자 분석 포털 — 시장 차트, 포트폴리오 시뮬레이션, LEAN 백테스트, 금융 문서 기반 RAG | `AWS` `Python` `RAG` `LEAN` |
-| [**stock-coin-trade**](https://github.com/edumgt/stock-coin-trade) | 코인·주식 통합 모의투자 웹 애플리케이션 | `Spring Boot` `Java` `Vanilla JS` `Docker Compose` `K8s/EKS` `Nginx` |
-| [**lumina-invest**](https://github.com/edumgt/lumina-invest) | FastAPI 기반 금융 AI 에이전트 — ReAct 챗봇(개인·기업 CB 자연어 질의), 퀀트 자동매매(LightGBM/MLP 백테스트), Qdrant RAG 문서 검색 | `FastAPI` `Ollama` `Qdrant` `LightGBM` `Docker` |
-| [**domain-rag-lab**](https://github.com/edumgt/domain-rag-lab) | 금융·생활거래 학습 RAG와 QuantConnect LEAN 백테스트 워크플로우 | `FastAPI` `Qdrant` `pgvector` `Streamlit` `yfinance` `Docker` |
-
 ---
 
 ## 🧠 Tech Stack
