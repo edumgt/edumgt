@@ -46,32 +46,6 @@ FastAPI 기반 금융 AI 에이전트. `FastAPI` `Ollama` `Qdrant` `LightGBM` `D
 
 ---
 
-## 🛠 기술 역량
-
-### 1. AI / LLM & Agent
-*   **ReAct 에이전트 챗봇**, Tool Calling, Ollama 기반 로컬 LLM 연동 (lumina-invest, domain-rag-lab)
-*   **LangChain 등 오케스트레이션**과 프롬프트 설계를 통한 금융 도메인 질의응답
-
-### 2. RAG & 검색
-*   **벡터 DB:** Qdrant, pgvector (PostgreSQL) 기반 금융 문서 유사도 검색
-*   금융 문서 기반 RAG 학습 포털 구축 (stock-kms-portal, domain-rag-lab)
-
-### 3. 퀀트 & 백테스트
-*   **QuantConnect LEAN** 백테스트 워크플로우, yfinance 시장 데이터 수집
-*   **LightGBM / MLP** 기반 퀀트 자동매매 모델 및 백테스트
-*   시장 차트, 포트폴리오 시뮬레이션
-
-### 4. 풀스택 & 트레이딩 플랫폼
-*   **Backend:** Python FastAPI, Java Spring Boot
-*   **Frontend:** Vanilla JS, HTML, Streamlit
-*   코인·주식 통합 모의투자 서비스 (stock-coin-trade)
-
-### 5. Cloud & DevOps
-*   **Container/Orchestration:** Docker, Docker Compose, Kubernetes (AWS EKS)
-*   **Cloud:** AWS, Nginx 기반 배포 구성
-
----
-
 ## 🧠 Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
