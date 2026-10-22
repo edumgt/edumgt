@@ -2,41 +2,68 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&duration=3000&color=36BCF7&lines=Financial+AI+Agents;RAG+and+Quant+Backtesting;Cloud-Native+Trading+Platforms)](https://git.io/typing-svg)
 
-### **금융 도메인 AI Agent · RAG · 퀀트 · 모의투자 플랫폼을 만듭니다**
+### **Building financial-domain AI agents, RAG, quant, and paper-trading platforms**
+
+---
+
+## 🌐 Ecosystem Overview
+
+Four repositories form a pipeline for financial AI, quant analysis, RAG-based knowledge search, paper trading, and brokerage Open API auto-trading.
+
+```mermaid
+flowchart LR
+    DRL["domain-rag-lab<br/>(finance RAG & LEAN backtests)"] -->|"backtest results / strategy specs (HTTP API)"| LUM["lumina-invest<br/>(robo-advisor & quant signals)"]
+    LUM -->|"order / balance Open API (API key)"| SCT["stock-coin-trade<br/>(paper trading & Open API broker)"]
+    DRL -.->|"fork & frontend integration"| SKP["stock-kms-portal<br/>(learning, charts, KMS, Lex/RAG portal)"]
+```
+
+- **Integration principle**: `domain-rag-lab`, `lumina-invest`, and `stock-coin-trade` are deployed independently with separate databases and communicate only via REST APIs (API key auth).
+- **Portal**: `stock-kms-portal` consolidates `domain-rag-lab` and the investment-analysis web app into a single entry point (port 80).
 
 ---
 
 ## 📦 Featured Projects
 
 ### 1. [stock-kms-portal](https://github.com/edumgt/stock-kms-portal)
-한국어 금융 학습·투자 분석 포털. `AWS` `Python` `RAG` `LEAN`
-*   **시장 차트**: 국내외 종목·지수 시세를 차트로 조회하고 추이를 분석
-*   **포트폴리오 시뮬레이션**: 종목 비중을 구성해 수익률·위험을 가상으로 검증
-*   **LEAN 백테스트**: QuantConnect LEAN 엔진으로 투자 전략의 과거 성과를 검증
-*   **금융 문서 기반 RAG**: 금융 학습 자료를 색인해 근거 기반 질의응답 제공
-*   **AWS 배포**: 클라우드 환경 운영을 전제로 한 구성
+Integrated Korean financial learning and investment-analysis KMS portal. `FastAPI` `Vanilla JS` `ApexCharts` `Qdrant` `pgvector` `AWS Lex` `LEAN`
+*   **Market charts**: Query domestic and global stock/index prices (Yahoo Finance-based API) with candlestick charts
+*   **Financial learning**: 10 learning units, with Mermaid.js diagrams
+*   **LEAN backtesting**: Built-in local Docker runner for the QuantConnect LEAN engine
+*   **Hybrid chat & RAG**: AWS Lex v2 chatbot combined with Qdrant document RAG
+*   **Origin**: Forked from the `domain-rag-lab` structure, with frontends migrated to a single origin
 
 ### 2. [stock-coin-trade](https://github.com/edumgt/stock-coin-trade)
-코인·주식 통합 모의투자 웹 애플리케이션. `Spring Boot` `Java` `Vanilla JS` `Docker Compose` `K8s/EKS` `Nginx`
-*   **통합 모의투자**: 코인과 주식을 한 화면에서 가상 자산으로 매수·매도하고 손익 확인
-*   **Spring Boot 백엔드**: Java 기반 REST API로 주문·자산·거래 처리
-*   **Vanilla JS 프런트엔드**: 프레임워크 없이 경량 UI 구현, Nginx로 정적 서빙 및 프록시
-*   **컨테이너·오케스트레이션**: Docker Compose 로컬 구동, K8s/EKS 배포 지원
+Paper-trading platform for stocks (KRX), crypto, and alternative assets, plus brokerage Open API practice. `FastAPI` `AWS SAM` `MariaDB` `PostgreSQL` `Vanilla JS` `Nginx`
+*   **Open API**: Virtual account issuing and order execution (`/api/v1/orders`, etc.) for external systems such as `lumina-invest`
+*   **Data**: MariaDB for members/trades, PostgreSQL (`pg-stock`) for OHLCV minute/daily bars
+*   **Broker integrations**: Korea Investment & Securities (KIS) API/paper trading, KB Securities Open API, Alpaca Paper Trading, TradingView Pine Script
+*   **Tooling**: KIS MCP (Model Context Protocol) server with VS Code/Codex integration
+*   **Frontend**: Vanilla JavaScript (ES Modules) served by Nginx
 
 ### 3. [lumina-invest](https://github.com/edumgt/lumina-invest)
-FastAPI 기반 금융 AI 에이전트. `FastAPI` `Ollama` `Qdrant` `LightGBM` `Docker`
-*   **ReAct 챗봇**: 개인·기업 CB(신용정보)를 자연어로 질의하면 도구 호출로 조회·추론
-*   **퀀트 자동매매**: LightGBM/MLP 모델로 신호를 생성하고 백테스트로 성과 검증
-*   **Qdrant RAG 문서 검색**: 벡터 DB 기반 금융 문서 검색 및 답변 근거 제공
-*   **Ollama 로컬 LLM**: 외부 API 없이 로컬 모델로 에이전트 구동, Docker로 패키징
+Robo-advisor and quant-signal orchestrator for automated trading. `FastAPI` `Celery` `PostgreSQL` `Redis` `LangChain` `LangGraph` `Qdrant` `Neo4j` `LightGBM`
+*   **Auto-trading engine**: Celery Beat runs the `quant.auto_trade_cycle` task every 10 minutes
+*   **Orchestration**: Receives strategy specs backtested in `domain-rag-lab`, computes risk limits, and sends orders to `stock-coin-trade` via Open API
+*   **AI & ML**: LangChain/LangGraph agents, Scikit-learn and LightGBM models
+*   **AWS**: SageMaker training-result lookup and AWS Comprehend sentiment analysis
+*   **Storage**: PostgreSQL 16 (SQLAlchemy, asyncpg, Alembic), Redis (sessions, Celery broker/backend)
 
 ### 4. [domain-rag-lab](https://github.com/edumgt/domain-rag-lab)
-금융·생활거래 학습 RAG와 QuantConnect LEAN 백테스트 워크플로우. `FastAPI` `Qdrant` `pgvector` `Streamlit` `yfinance` `Docker`
-*   **도메인 RAG 실험**: 금융·생활거래 문서를 Qdrant와 pgvector 두 벡터 저장소로 비교 검색
-*   **FastAPI 서비스**: 색인·검색·질의응답 API 제공
-*   **Streamlit UI**: 실험 결과를 대화형 화면으로 확인
-*   **yfinance 데이터 + LEAN 백테스트**: 시세 수집부터 전략 백테스트까지 워크플로우 구성
-*   **Docker 환경**: 재현 가능한 실습 환경
+RAG for financial products and asset allocation, with QuantConnect LEAN backtest workflows. `FastAPI` `Streamlit` `Qdrant` `pgvector` `Redis` `Docker`
+*   **Hybrid search**: Qdrant vector search and PostgreSQL keyword search fused with Reciprocal Rank Fusion (RRF)
+*   **Multi-turn orchestrator**: Session short-term memory and `pgvector`-based long-term memory
+*   **Ingestion**: PDF/TXT document ingestion and chunking pipeline
+*   **LEAN backtesting**: Local Docker-based QuantConnect LEAN engine
+*   **Infrastructure**: Docker Compose, Caddy (TLS reverse proxy), AWS EC2 deployment
+
+### Comparison
+
+| Repository | Domain | Databases | Role |
+|---|---|---|---|
+| `domain-rag-lab` | Finance RAG & LEAN backtests | PostgreSQL (`pgvector`), Qdrant | Streamlit UI + FastAPI, backtest results |
+| `lumina-invest` | Quant signals & robo-advisor | PostgreSQL, Redis, Neo4j, Qdrant | Periodic signals, order triggers |
+| `stock-coin-trade` | Stock/crypto/alt-asset paper trading | MariaDB, PostgreSQL (`pg-stock`) | Paper order Open API, KIS/KB/Alpaca |
+| `stock-kms-portal` | Learning, charts, KMS portal | PostgreSQL (`pgvector`), Qdrant | Unified UI, AWS Lex + RAG chatbot, LEAN |
 
 ---
 
