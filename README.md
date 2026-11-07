@@ -1,10 +1,10 @@
 # 🚀 AI Agent · Fintech · 3D Engine · Air-Gap
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&duration=3000&color=36BCF7&lines=Financial+AI+Agents;Browser+3D+Engines;Air-Gap+GPU+Research)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&duration=3000&color=36BCF7&lines=Financial+AI+Agents;Browser+3D+Engines;Air-Gap+GPU+Research;Autonomous+AI+Ops)](https://git.io/typing-svg)
 
-### **Financial AI agents, browser 3D engines, and air-gapped GPU research platforms**
+### **Financial AI agents, browser 3D engines, air-gapped GPU research platforms, and autonomous AI Ops**
 
-Domain AI that can run as a cloud service, a self-contained browser runtime, or a disconnected on-prem lab. The same patterns — agents, local inference, containers, and reproducible delivery — show up in fintech, spatial engines, and air-gap GPU platforms.
+Domain AI that can run as a cloud service, a self-contained browser runtime, or a disconnected on-prem lab. The same patterns — agents, local inference, containers, and reproducible delivery — show up in fintech, spatial engines, air-gap GPU platforms, and a fully automated AI Ops loop that ships [www.edumgt.co.kr](https://www.edumgt.co.kr/) through S3 and CloudFront.
 
 ---
 
@@ -26,11 +26,17 @@ flowchart TB
         K8S["k8s-jupyter-lab<br/>OVA + K8s + local LLM"]
         HAR -.->|"image mirror"| K8S
     end
+    subgraph OPS["Autonomous AI Ops"]
+        HERMES["Agent harness<br/>Hermes style"] --> CREW["Multi-agent crew<br/>CrewAI style"]
+        CREW --> SITE["edumgt-site<br/>S3 + CloudFront<br/>www.edumgt.co.kr"]
+        SITE -.->|"monitoring feedback"| HERMES
+    end
 ```
 
 - **Fintech**: independently deployed services, separate databases, REST only (API key auth).
 - **3D**: browser engines with no required backend — a procedural dimetric studio and a WebGL physics sim.
 - **Air-gap**: VMware OVA delivery into a network with no public internet. Harbor, Nexus, and GitLab mirror images and packages; GPU workers run local LLM, agents, and JupyterHub.
+- **AI Ops**: an always-on agent harness (Hermes style) receives events, a role-based crew (CrewAI style) plans, builds, reviews, and deploys, and monitoring feeds back into the loop. Reference target: the static site behind www.edumgt.co.kr on Amazon S3 and CloudFront.
 
 ---
 
@@ -162,6 +168,48 @@ Hands-on lab for running Harbor the way an air-gapped network would: internal re
 
 ---
 
+## 🤖 Autonomous AI Ops
+
+A fully automated operations loop for a production site. An always-on agent harness in the style of [Hermes Agent](https://github.com/NousResearch/hermes-agent) owns the tool-call loop, skills, long-term memory, sessions, and guardrails. It delegates work to a role-based crew in the style of [CrewAI](https://github.com/crewAIInc/crewAI), and the crew ships the result to the live site. The reference target is [www.edumgt.co.kr](https://www.edumgt.co.kr/), a static site built from [edumgt-site](https://github.com/edumgt/edumgt-site) and served from Amazon S3 through CloudFront. The same model is shown as an interactive 3D architecture on the site ([04 · Autonomous AI Ops](https://www.edumgt.co.kr/en.html#exam-3d)).
+
+```mermaid
+flowchart LR
+    subgraph HARNESS["Agent harness · Hermes style"]
+        EV["Events & triggers<br/>Git push · alerts · cron · chat"] --> HM["Agent Harness<br/>tool loop · skills · memory · sessions"]
+        HM --> GD["Policy & guardrails<br/>secrets · limits · approval"]
+    end
+    subgraph CREW["Multi-agent crew · CrewAI style"]
+        PL["Planner Agent<br/>tasks · acceptance criteria"] --> BD["Builder Agent<br/>code · content · build_site.py"]
+        BD --> RV["Reviewer · QA Agent<br/>tests · links · a11y · security"]
+        RV -.->|"below the bar"| BD
+    end
+    subgraph AWS["AWS delivery & operations · www.edumgt.co.kr"]
+        GH["GitHub<br/>edumgt-site commits / PRs"] --> DP["Deploy Agent<br/>aws s3 sync · invalidation"]
+        DP --> S3["Amazon S3<br/>static origin · versioning · OAC"]
+        S3 --> CF["Amazon CloudFront<br/>HTTPS · edge cache"]
+        CF --> WEB["www.edumgt.co.kr<br/>Route 53 · ACM"]
+        CF --> MON["Monitoring<br/>CloudWatch · access logs · health checks"]
+    end
+    HM --> PL
+    GD --> DP
+    RV --> GH
+    MON -.->|"feedback · self-healing"| EV
+```
+
+- **Harness (Hermes style)**: one long-running agent process receives Git webhooks, monitoring alerts, scheduled jobs, and human chat through a single gateway, keeps long-term memory and a skill library, and decides what to delegate.
+- **Crew (CrewAI style)**: Planner, Builder, Reviewer/QA, and Deploy agents with explicit roles and acceptance criteria. Work that fails review loops back to the Builder instead of reaching production.
+- **Guardrails**: secrets stay outside the model context, execution limits bound each run, and production changes outside the approved scope escalate to a human.
+- **Delivery**: verified changes are committed to `edumgt-site`, the built `index.html` / `en.html` are synced to the S3 origin bucket (reads allowed only from CloudFront via OAC), and a CloudFront invalidation publishes the new version at www.edumgt.co.kr.
+- **Feedback**: CloudWatch metrics, access logs, and availability checks flow back into the harness, so a detected failure starts a fix run automatically.
+
+| Layer | Role | Reference components |
+|---|---|---|
+| Agent harness | Always-on event intake, tool loop, memory, guardrails | Hermes Agent style harness, webhooks, cron, chat gateway |
+| Multi-agent crew | Plan → build → review → deploy with role agents | CrewAI style crew, `build_site.py`, tests and security checks |
+| Delivery & operations | Static site hosting and feedback loop | GitHub, Amazon S3, CloudFront, Route 53, ACM, CloudWatch |
+
+---
+
 ## 🧠 Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
@@ -178,3 +226,7 @@ Hands-on lab for running Harbor the way an air-gapped network would: internal re
 ![VMware](https://img.shields.io/badge/VMware-607078?logo=vmware&logoColor=white)
 ![Harbor](https://img.shields.io/badge/Harbor-60B932?logo=goharbor&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?logo=amazons3&logoColor=white)
+![CloudFront](https://img.shields.io/badge/CloudFront-8C4FFF?logo=amazonaws&logoColor=white)
+![CrewAI](https://img.shields.io/badge/CrewAI-multi--agent-FF5A50)
+![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-harness-1F2937)
