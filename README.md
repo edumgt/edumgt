@@ -4,6 +4,12 @@
 
 ### **Financial AI agents, browser 3D engines, air-gapped GPU research platforms, and autonomous AI Ops**
 
+## Try a project in your browser
+
+[▶ **Build a Joseon-era Hanok village**](https://edumgt.github.io/A-web-based-Hanok-simulator-game/) &nbsp;·&nbsp; [▶ **Race a Siamese-cat kart in 3D**](https://edumgt.github.io/Siamese-Cat-KartRider/)
+
+No signup or backend required — open either demo and play immediately.
+
 Domain AI that can run as a cloud service, a self-contained browser runtime, or a disconnected on-prem lab. The same patterns — agents, local inference, containers, and reproducible delivery — show up in fintech, spatial engines, air-gap GPU platforms, and a fully automated AI Ops loop that ships [www.edumgt.co.kr](https://www.edumgt.co.kr/) through S3 and CloudFront.
 
 ---
